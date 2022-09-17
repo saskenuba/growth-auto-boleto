@@ -1,3 +1,5 @@
 {:paths ["src", "resources"]
  :deps  {java-http-clj/java-http-clj {:mvn/version "0.4.3"}
-         etaoin/etaoin               {:mvn/version "1.0.38"}}}
+         etaoin/etaoin               {:mvn/version "1.0.38"}}
+ :tasks {:requires ([cli.core :refer [main-flow]])
+         boletar (main-flow)}}
